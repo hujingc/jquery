@@ -19,33 +19,36 @@ Step 5: Toggling the Home Address
 Now when you test your form, you'll notice that when you un-check your checkbox, the home address field isn't enabled.
 Add an if-else statement to your setHomeAddress() function so that when the checkbox is un-checked the Home address field is reset to empty and enabled again.-->
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Challenge Two</title>
-    
-</head>
-<body>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Challenge Two</title>
+
+  </head>
+
+  <body>
     <h1>Challenge Two</h1>
     <form action="challenge3.html">
       <fieldset>
         <legend>Billing Information</legend>
         <div>
-          <label for ="billing">Billing Address:</label><br>
+          <label for="billing">Billing Address:</label><br>
           <textarea name="billingAdd" id="billing"></textarea>
           </label>
         </div>
 
         <div>
-          <label for ="home">Home Address:</label><br>
-          <input type="checkbox" name="useBilling" onclick = "setHomeAddress()" id="useBilling"> Same as above
+          <label for="home">Home Address:</label><br>
+          <input type="checkbox" name="useBilling" onclick="setHomeAddress()" id="useBilling"> Same as above
           </label>
-        <br>
-        <textarea name="homeAdd" id="home"></textarea>
+          <br>
+          <textarea name="homeAdd" id="home"></textarea>
         </div>
-        <input type = "submit" value = "Go To Challenge 3">
+        <input type="submit" value="Go To Challenge 3">
       </fieldset>
 
-    <script src = "js/challenge2.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-</body>
+      <script src="js/challenge2.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  </body>
+
 </html>
