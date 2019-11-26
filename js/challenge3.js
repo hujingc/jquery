@@ -1,8 +1,9 @@
 $('form').submit(function () {
     let fruit = $("input[name='fruit']").is(':checked');
-    let stand = $("input[name='standing']").is(':checked');
+    let standing = $("input[name='standing']").is(':checked');
     if (fruit & standing) {
         console.log('everything is fine')
+
     } else if (!fruit & standing) {
         console.log('pick a fruit, we have standing')
         alert("You must pick a fruit!")
