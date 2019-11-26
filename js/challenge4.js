@@ -1,6 +1,6 @@
 $('form').submit(function (event) {
     console.log("the click's registering")
-//if name is empty
+    //if name is empty
     if ($("#fullname").val() == '') {
         console.log("there's no name")
         $("#nameerrormsg").show();
@@ -8,8 +8,9 @@ $('form').submit(function (event) {
     } else {
         $("#nameerrormsg").hide();
     }
-//if address is empty
+    //if address is empty
     if ($("#streetaddr").val() == '') {
+        console.log("there's no address")
         $("#addrerrormsg").show();
         event.preventDefault();
     } else {
