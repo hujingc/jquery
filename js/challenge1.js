@@ -1,5 +1,5 @@
-$(document).ready(function (event) {
-    $('#subscribe').click(function (event) {
+$(document).ready(function () {
+    $('#subscribe').click(function () {
         $('#emailField').toggle();
     });
 });
