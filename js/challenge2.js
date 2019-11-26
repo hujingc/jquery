@@ -4,6 +4,7 @@ $(document).ready(function () {
 			$('#home').val($('#billing').val())
 			$('#home').prop('disabled', true)
 		} else {
+			$('#home').val('')
 			$('#home').prop('disabled', false)
 		}
 	})
